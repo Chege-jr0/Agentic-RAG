@@ -1,0 +1,25 @@
+Kenya Financial Inclusion Overview 2024
+
+Kenya has achieved a financial inclusion rate of 84.8 percent in 2024 according to the FinAccess Household Survey. This represents significant progress from 26.7 percent in 2006.
+
+M-Pesa launched in 2007 and now has 34 million subscribers in Kenya. It has been the primary driver of financial inclusion growth. The mobile money platform allows users to send money, save, borrow and pay bills using a basic mobile phone.
+
+County Level Analysis
+
+Kiambu County leads with 94 percent financial inclusion. Nairobi follows at 93.7 percent. West Pokot has the lowest inclusion rate at 48.5 percent. Turkana County stands at 65.9 percent inclusion.
+
+The gap between the highest and lowest county is 45.5 percentage points. This geographic inequality is driven by infrastructure gaps, agent network density and mobile phone penetration.
+
+Gender Gap Progress
+
+In 2006 the gender gap in financial inclusion was 12.7 percentage points with men at 33.2 percent and women at 20.5 percent. By 2024 this gap has narrowed dramatically to just 1.6 percentage points with men at 85.7 percent and women at 84.1 percent.
+
+M-Pesa has been identified as the primary driver of this gender gap closure. The low barriers to entry — requiring only a phone and national ID — made it accessible to women who previously lacked formal employment or bank accounts.
+
+Financial Exclusion Barriers
+
+64.1 percent of excluded Kenyans cite lack of a mobile phone as their primary barrier. 51.5 percent cite lack of a national identity document. 43.2 percent cite insufficient income. 24.3 percent cite distance to the nearest M-Pesa agent.
+
+Financial Health
+
+Despite high inclusion rates only 18.3 percent of Kenyans are considered financially healthy. This means the majority of included Kenyans have access to financial services but are not yet financially secure.

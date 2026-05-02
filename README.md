@@ -1,5 +1,5 @@
 ## Agentic RAG
-git 
+A production-grade Retreieval-Augmented Generation system with autonomous query rewriting, hybrid retrieval, reranking, self evaluation and multi-step reasoning built entirely on python.
 
 ## Tech Stack
 1. Python => Pure Implementation, no frameworks.
