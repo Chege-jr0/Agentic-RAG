@@ -92,7 +92,7 @@ def load_documents() -> list[dict]:
     return documents 
 
 
-def ingest_docuements():
+def ingest_documents():
     """
     Main Ingestion pipeline Load documents, Chunk each document, embed chunks and stores in ChromaDB
     """
@@ -159,7 +159,7 @@ def ingest_docuements():
             print("Ingestion Complete")    
 
 if __name__ == "__main__ ":
-    ingest_docuements()
+    ingest_documents()
 
 
 
