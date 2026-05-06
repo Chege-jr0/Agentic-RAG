@@ -5,7 +5,7 @@ Reranker = You reading the first page of each book and deciding which 3 are actu
 
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
-from core.retriever import RetrievedChunk
+from retriever import RetrievedChunk
 
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
