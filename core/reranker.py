@@ -168,7 +168,7 @@ class Reranker:
         return final, details   
 
 if __name__ == "__main__":
-    from core.retriever import HybridRetriever
+    from retriever import HybridRetriever
 
     print("Testing Reranker...")
 
