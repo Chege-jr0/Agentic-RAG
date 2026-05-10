@@ -155,7 +155,7 @@ class AgenticRAG:
                     print(f"Context sufficient - proceeding")
                     break
                 else:
-                    print(f"Context insufficient - {evaluation_result.reasoning1}")
+                    print(f"Context insufficient - {evaluation_result.reasoning}")
 
                     if attempt < self.MAX_RETRIES:
                         #Expand the search query for next attempt

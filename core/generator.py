@@ -186,13 +186,16 @@ class Generator:
 
             sub_prompt = f"""
         Using the context below, answer this specific quesion briefly.
+        Context: {context}
+        Question: {sub_q}
+        Brief answer (1-2 sentences):
         """
             try:
                 response = ollama.chat(
                     model = self.MODEL,
                     messages=[{"role": "user", "content": sub_prompt}]
                 )
-                sub_answer = response["mesage"]["content"].strip()
+                sub_answer = response["message"]["content"].strip()
                 sub_answers.append(f"{sub_q}\n {sub_answer}")
             except Exception as e:
                 sub_answer.append(f"{sub_q} \n Unable to answer this part")
@@ -233,9 +236,9 @@ class Generator:
     def generate(self, query: str, chunks: list[RetrievedChunk], analysis: QueryAnalysis, sub_questions: list[str] = None) -> GeneratedAnswer:
         """
         Main generation function - called by the agent.
-        Selects the right mode and generates the answe
+        Selects the right mode and generates the answerpyth
         """  
-        print(f" Generating answer...")
+        print(f"Generating answer...")
 
         # Buil context from chunks
         context, citations = self.build_context(chunks)

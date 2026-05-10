@@ -13,8 +13,11 @@ st.set_page_config(
     page_title="Agentic_RAG",
     layout="wide"
 )
+# Initialize session state keys
+if "query" not in st.session_state:
+    st.session_state["query"] = ""
 
-st.title("Agentic RAG -  Built from pure Python")
+st.title("Agentic RAG -  Built From Python")
 st.markdown("""
 An intelligent RAG system that thinks before it answers.
 Ask any question and watch the agent analyse, rewrite, retrieve, rerank, evaluate and reason step by step
@@ -69,11 +72,13 @@ with col1:
     query = st.text_input(
         "Your question:",
         placeholder="e.g Why is Turkana's Financial inclusion rate so low?",
-        label_visibility="collapsed"
+        label_visibility="collapsed",
+        value=st.session_state.query
     )
 
 with col2:
     ask_button = st.button("Ask Agent", type = "primary")
+
 
 
 # Example question buttons
@@ -97,6 +102,7 @@ with ex_col3:
         ask_button = True  
 
 if ask_button and query:
+    st.session_state[query] = ""
 
     # Run the agent
     with st.spinner("Agent Thinking..."):
@@ -108,16 +114,14 @@ if ask_button and query:
     #Step Indicators
     steps = st.columns(6)
     step_labels = [
-        ("Analysing"),
-        ("Rewriting"),
-        ("Retrieving"),
-        ("Reranking"),
-        ("Evaluating"),
-        ("Generating")
+        (" - ", "Analysing"),
+        (" - ", "Rewriting"),
+        (" - ", "Retrieving"),
+        (" - ", "Reranking"),
+        (" - ", "Evaluating"),
+        (" - ", "Generating")
     ]  
-
-   
-              
+           
 
     st.markdown("")
 
@@ -179,7 +183,7 @@ if ask_button and query:
 
         with col2:
             passed = "Yes" if trace.evaluation_passed else "Partial"
-            st.metric = ("Context Sufficient", passed)   
+            st.metric("Context Sufficient", passed)   
 
         if trace.evaluation_attempts > 1:
             st.warning(
@@ -199,7 +203,7 @@ if ask_button and query:
         if trace.reasoning_steps:
             st.markdown("Reasoning Steps:")
             for step in trace.reasoning_steps:
-                st.markdown(f"{steps}")     
+                st.markdown(f"{step}")     
 
     # The Answer
     st.markdown("---")
