@@ -3,6 +3,8 @@ A production-grade Retreieval-Augmented Generation system with autonomous query 
 
 ## What Makes this Agentic
 Standard RAG is passive - It takes a question, searches once, and generates an answer. This one takes in a query, analyses the query, rewrite the query, searches the query, reranks the query, evaluates the answer and generates an answer.
+<img width="1056" height="488" alt="Screenshot 2026-05-10 190723" src="https://github.com/user-attachments/assets/11ff37b9-e1d1-4636-9d36-f7b73964a97d" />
+
 
 ## Step by Step Procedure
 
